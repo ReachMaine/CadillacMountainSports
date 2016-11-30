@@ -1,0 +1,146 @@
+/*!
+ * Theme Name: cadillacmt
+ * Author: Linda Speight
+ * Version: 2.0
+ * Client: Cadillac Mountain Sport
+ * Project Name: Joomla 3 upgrade of template
+ * Description: 
+ */
+ 
+/* Import Statements ----------------------------------- */
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "partials/settings";
+@import "partials/template-parts"; /* general layout styling */
+
+
+/* specifics for this site */
+#site-wrapper {
+	border-top: 3px #000 solid;
+}
+
+#showcase-wrapper {
+	#logo-overlay {
+		position: relative;
+		z-index: 200;
+		top: -145px;
+		left: -171px;
+	}
+	.fpss-container {
+		.slidetext {
+			display: none; // for now;
+		}
+	}
+	
+}
+#left-panel-wrapper {
+	background: url(../images/left-menuback.jpg) repeat-y ;
+}
+
+#right-panel-wrapper {
+	background: url(../images/right-panelback.jpg) repeat-y ;
+}
+
+#content-bottom {
+	.custom {
+		text-align: center;
+	}
+}
+
+
+#left-panel {
+		padding-top: 320px;
+		//padding-left: 24px;
+		font-size: 19px;
+		line-height: 24px;
+		.nav {
+			border-top: 1px whitesmoke solid;
+			li {
+				padding-top: 10px;
+			}
+		}
+	.ux-menu-container {
+		padding-top: 30px;
+		padding-left: 25px;
+		.ux-menu a {
+			border-left: 0px;
+			border-right: 0px;
+			padding-right: 12px;
+		}
+		.ux-menu li {
+			width: 185px;
+		}
+		.ux-menu-arrow {
+			background: url(../images/menu-arrow-right.png);
+		}
+	}
+	.search {
+		padding: 40px 0 34px 34px ;
+	}
+	.element-invisible { // for 'invisible' elements in search module
+		display: none;
+		visibility: hidden;
+		height: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+
+#main-content {
+	.page-header h2, h2.item-title {
+		text-align: center;
+		font-size: 29px;
+		line-height: 32px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+
+	.weblink-category .pagination ul li {
+		display: inline;
+		padding-right: 10px;
+	}
+}
+
+#content-bottom {
+	.newsflash {
+		padding-top: 10px;
+		border-top: 1px $grey-border-color solid;
+		.newsflash-title {
+			font-size: 22px;
+			text-align: center;
+		}
+	}
+}
+
+.newsflash {
+	.newsflash-title {
+		//padding-bottom: 20px;
+	}
+} 
+
+// add some spacing between events 
+.blog.cadillac-events {
+	div.leading-1, div.leading-2,  div.leading-3 {
+		.page-header {
+			padding-top: 20px;
+		}
+	}
+}
+
+// press release pages.
+.category-list.cms-pr-list {
+	padding-left: 10px;
+	padding-right: 10px;
+	table.category.table {
+		width: 100%;
+		tbody {
+			tr {
+				line-height: 130%;
+				font-size: 130%;
+			}
+		}
+	}
+}
+

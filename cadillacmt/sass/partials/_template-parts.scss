@@ -1,0 +1,141 @@
+
+/* widths of template parts */
+$site-width: 999px;  // left panel + center panel + right panel
+$left-panel-size: 200px;
+$right-panel-size: 49px;
+$center-panel-size: 750px; // includes left side + content size + right sidebar
+$content-size: 600px;
+$left-sidebar-size: 0px; 
+$right-sidebar-size: 150px;
+/* heights of template parts */
+$showcase-ht: 280px;
+
+$content-bkg: #FFFFFF;
+body {
+	background-color: $site-bkgd-color;
+	background-color:linear-gradient(to bottom,$site-bkgd-color, #E6E6E6 );
+	height: 100%;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+#site-wrapper {
+	width: $site-width;
+	margin:auto;
+}
+#left-panel-wrapper {
+	width: $left-panel-size;
+	min-height: 600px;
+	height: 100%;
+	float: left;
+	
+}
+#center-panel-wrapper {
+	background-color: $content-bkg;
+	float:left;
+	width: $center-panel-size;
+	#showcase-wrapper {
+		clear: both;
+		width: 100%;
+		height: $showcase-ht;
+		#showcase {
+			.fpss-container {
+				margin: 0px;
+				border: 0px;
+			}
+		}
+		
+	}
+	#main-top-wrapper {
+		width: 100%;
+		clear: both;
+		#main-top {
+			height: 40px;
+			border-bottom: 1px grey solid;
+			box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.36);
+			.nav {
+				padding-top: 10px;
+				padding-right: 5px;
+				float:right;
+				font-size: 18px;
+				line-height: 20px;
+				li {
+					display: inline;
+					margin: 4px;
+					padding: 6px;
+				}
+				li.current.active {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	#content-area-wrapper {
+		width: 100%;
+		clear: both;
+		#content-top-wrapper {
+			clear: both;
+			width: 100%;
+		}
+		#left-sidebar-wrapper {
+			float: left;
+			width: $left-sidebar-size;
+		}
+		#main-content-wrapper {
+			float:left;
+			//width: $content-size;
+			#main-content {
+				//width: inherit;
+				//clear: both;
+				//padding-top: 10px;
+				margin: 10px 15px;
+			}
+		}
+		#right-sidebar-wrapper {
+			float: left;
+			width: $right-sidebar-size;
+			#right-sidebar {
+				padding-top: 10px;
+				padding-right: 6px;
+			}
+		}
+		#content-bottom-wrapper {
+			clear: both;
+			width: 100%;
+			#content-bottom {
+				padding: 10px 15px; // same as main-content
+			}
+		}
+	
+	}
+	
+	#center-bottom-wrapper {
+		clear: both;
+		width: 100%;
+	}
+} /* end of center panel */
+#right-panel-wrapper {
+	width: $right-panel-size;
+	background: url(../images/right-panelback.jpg) repeat-y ;
+	min-height: 600px;
+	float: left;
+}
+footer {
+	clear: both;
+	background-color: $footer-color;
+	height: 30px;
+}
+#copyright-wrapper {
+	width: 100%;
+	padding-top: 10px;
+	color: whitesmoke;
+
+	#copyright {
+		font-size:10px;
+		float: left;
+		padding-left: 10px;
+	}
+	#ea-logo {
+		float: right;
+		padding-right: 10px;
+	}
+}

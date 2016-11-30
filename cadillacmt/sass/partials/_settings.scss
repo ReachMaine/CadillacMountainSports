@@ -1,0 +1,123 @@
+/* Colors ---------------------------------------------- */
+$linkcolor: #900;//
+$linkhovercolor: #C64934;;
+$fontcolor: #333;
+$site-bkgd-color: #b9b9b9; //#5A5A5A; // #333333;
+$leftpanel-bkgrnd: #660000;
+$leftnav-color: #000000;
+$leftnav-hovercolor: #BEBEBE;
+$footer-color: #000;
+$grey-border-color: #808080;
+
+
+/* Typography ------------------------------------------ */
+
+$sans: Geneva, Arial, Helvetica, sans-serif;
+$serif: Georgia, "Times New Roman", Times, serif;
+
+/* General Tags ---------------------------------------- */
+body {
+	color: $fontcolor;
+}
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+.pull-right {
+	float:right;
+}
+
+h1 {
+	 font-size: 28px;
+	 line-height: 30px;
+	font-weight: normal;
+	margin: 4px 0;
+}
+h2, h3 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	padding: 5px 0;
+}
+
+
+h4, h5 {
+	font-size:18px; 
+	line-height: 22px; 
+	padding: 5px 0;
+}
+
+h3, h5 {color: $linkhovercolor;}
+
+h6 {font-size: 11px; line-height: 15px; font-weight: 900 ;padding: 5px 0;}
+
+
+a, a:visited {
+	color: $linkcolor;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $linkhovercolor;
+	text-decoration: underline;
+}
+
+a.image, a.image:hover  {border:0;}
+
+#content-area-wrapper {
+	p, ol, ul {
+		padding: 5px 0;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	ul {
+		list-style-position: inside;
+		list-style-type: disc;
+		margin: 10px 24px
+	}
+	ol {
+		list-style-position: inside;
+		list-style-type: decimal;
+		margin: 10px 24px
+
+	}
+	ol li, ul li {
+		padding: 5px 0px;
+	}
+	.newsflash p {
+		font-size: 12px;
+		line-height: 16px;
+		padding-top: 0px;
+	}
+}
+
+#left-panel {
+	.nav {
+		a {
+			color: white;
+		}
+		a:hover {
+			color: $leftnav-hovercolor;
+		}
+	}
+}
+
+.span4 {
+	width: 32%;
+	float: left;
+}
+.items-row {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.clearfix {
+	clear: both;
+}
+.padl20 {
+	padding-left: 20px;
+}
