@@ -1,8 +1,11 @@
-<?php 
-	defined('_JEXEC') or die; 
+<?php
+	defined('_JEXEC') or die;
 	$app = JFactory::getApplication();
 	$content_size = $this->params->get('content-width');
 ?>
+<?php /*
+30Nov16 zig - remove our logo
+*/ ?>
 <!doctype html>
 <html>
 	<head>
@@ -13,7 +16,7 @@
 		<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/master.css" rel="stylesheet" type="text/css" />
 
 		<!-- Javascripts -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/modernizr.min.js" type="text/javascript"></script>
 		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/custom.js" type="text/javascript"></script>
 		<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/analytics.min.js" type="text/javascript"></script>
@@ -78,7 +81,7 @@
 							<jdoc:include type="modules" name="left-sidebar" />
 						</div>
 					</div>
-					
+
 					<div id="main-content-wrapper" <?php if ($this->countModules('right-sidebar')) { ?> style="width:<?php echo $content_size ?>px" <?php  } else { ?> style="width:100%"  <?php } ?> >
 						<article id="main-content">
 							<jdoc:include type="component" />
@@ -94,7 +97,7 @@
 							<jdoc:include type="modules" name="content-bottom" />
 						</div>
 					</div>
-				
+
 				</div>
 				<!-- end of content-area wrapper -->
 				<div id="center-bottom-wrapper">
@@ -102,7 +105,7 @@
 						<jdoc:include type="modules" name="center-bottom" />
 					</div>
 				</div>
-			</section> 
+			</section>
 			<!-- end of center panel -->
 
 			<!-- right panel -->
@@ -110,15 +113,15 @@
 				<div id="right-panel">
 					<jdoc:include type="modules" name="right-panel"/>
 				</div>
-			</section> 
-			
+			</section>
+
 			<footer>
 				<div id="footer-wrapper">
 					<jdoc:include type="modules" name="footer" />
 				</div>
 				<div id="copyright-wrapper">
 					<article id="copyright">
-						Copyright &copy; 
+						Copyright &copy;
 						<?php echo date('Y');
 							echo '&nbsp;'; ?>
 						<a href="<?php echo $this->baseurl; ?>">
@@ -126,10 +129,10 @@
 						</a>.&nbsp;
 						 All Rights Reserved.
 					</article>
-					<div id="ea-logo">
+					<?php /* <div id="ea-logo">
 						<a href="http://eaonline.info" target="_blank" class="brand"><img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/ea-white.png" alt="Ellsworth American Logo" /></a>
-					</div>	
-				</div>				
+					</div>	*/ ?>
+				</div>
 			</footer>
 		</div>
 	</body>
