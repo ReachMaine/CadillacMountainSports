@@ -5,7 +5,7 @@ $left-panel-size: 200px;
 $right-panel-size: 49px;
 $center-panel-size: 750px; // includes left side + content size + right sidebar
 $content-size: 600px;
-$left-sidebar-size: 0px; 
+$left-sidebar-size: 0px;
 $right-sidebar-size: 150px;
 /* heights of template parts */
 $showcase-ht: 280px;
@@ -27,7 +27,7 @@ body {
 	min-height: 600px;
 	height: 100%;
 	float: left;
-	
+
 }
 #center-panel-wrapper {
 	background-color: $content-bkg;
@@ -43,7 +43,7 @@ body {
 				border: 0px;
 			}
 		}
-		
+
 	}
 	#main-top-wrapper {
 		width: 100%;
@@ -88,6 +88,8 @@ body {
 				//clear: both;
 				//padding-top: 10px;
 				margin: 10px 15px;
+				padding-left: 15px;
+				padding-right: 10px;
 			}
 		}
 		#right-sidebar-wrapper {
@@ -105,9 +107,9 @@ body {
 				padding: 10px 15px; // same as main-content
 			}
 		}
-	
+
 	}
-	
+
 	#center-bottom-wrapper {
 		clear: both;
 		width: 100%;
